@@ -31,7 +31,7 @@ NotebookLMのスライド生成と違い、成果物は **編集可能な Marp �
 ```
 
 > ローカルから試す場合は、リポジトリのパスを直接指定できます:
-> `/plugin marketplace add /path/to/SlideCreateSkill`
+> `/plugin marketplace add /path/to/slide-builder`
 
 ## 使い方
 
@@ -78,7 +78,7 @@ NotebookLMのスライド生成と違い、成果物は **編集可能な Marp �
 ## リポジトリ構成
 
 ```
-SlideCreateSkill/
+slide-builder/                リポジトリルート（= クローン先フォルダ）
   .claude-plugin/
     marketplace.json          マーケットプレイス定義
   slide-builder/              プラグイン本体
