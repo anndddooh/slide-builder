@@ -1,0 +1,15 @@
+{
+  "theme": "base",
+  "themeVariables": {
+    "primaryColor": "#DBEAFE",
+    "primaryBorderColor": "#2563EB",
+    "primaryTextColor": "#1F2933",
+    "lineColor": "#52606D",
+    "secondaryColor": "#F3F4F6",
+    "tertiaryColor": "#FFFFFF",
+    "fontFamily": "Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif",
+    "fontSize": "18px"
+  },
+  "flowchart": { "curve": "basis", "useMaxWidth": true },
+  "sequence": { "useMaxWidth": true }
+}

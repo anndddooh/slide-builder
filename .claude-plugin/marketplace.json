@@ -1,0 +1,15 @@
+{
+  "name": "slide-builder-marketplace",
+  "description": "Markdown原案から分かりやすいMarpスライドを生成するスキルのマーケットプレイス",
+  "owner": {
+    "name": "hironori"
+  },
+  "plugins": [
+    {
+      "name": "slide-builder",
+      "source": "./slide-builder",
+      "description": "Markdown原案を、全文を保持したまま分かりやすいMarp形式のスライドへ変換するスキル",
+      "keywords": ["marp", "slides", "presentation", "markdown"]
+    }
+  ]
+}

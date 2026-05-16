@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" fill="#F3F4F6"/>
+  <rect x="12" y="12" width="1256" height="696" fill="none"
+        stroke="#C3CAD3" stroke-width="3" stroke-dasharray="14 12" rx="16"/>
+  <g fill="none" stroke="#9AA5B1" stroke-width="8" stroke-linecap="round">
+    <circle cx="640" cy="300" r="64"/>
+    <path d="M610 300h60M640 270v60"/>
+  </g>
+  <text x="640" y="430" font-family="Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif"
+        font-size="40" fill="#6B7480" text-anchor="middle" font-weight="700">
+    説明図プレースホルダ
+  </text>
+  <text x="640" y="486" font-family="Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif"
+        font-size="26" fill="#9AA5B1" text-anchor="middle">
+    spec ファイルから画像生成AIで作図し、同名の .png に差し替えてください
+  </text>
+</svg>

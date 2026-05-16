@@ -1,0 +1,254 @@
+/* ============================================================
+   slide-builder theme — clean / flat / vibrant
+   このCSSは生成時に slides.md の `style:` ディレクティブへ
+   インライン展開される（外部テーマ登録は不要）。
+   アクセント色を変えたい場合は --accent の値だけ差し替える。
+   ============================================================ */
+
+:root {
+  --accent: #2563EB;        /* 鮮やかなアクセント1色 */
+  --accent-weak: #DBEAFE;   /* アクセントの淡いトーン（帯・引用などに） */
+  --ink: #1F2933;           /* 本文テキスト */
+  --ink-soft: #52606D;      /* 補足テキスト */
+  --bg: #FFFFFF;            /* スライド背景（白ベース） */
+  --line: #E4E7EB;          /* 罫線・区切り */
+}
+
+section {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans",
+    "Yu Gothic", "YuGothic", "Noto Sans JP", "Meiryo", sans-serif;
+  font-size: 26px;
+  line-height: 1.6;
+  padding: 64px 72px;
+  letter-spacing: 0.01em;
+}
+
+/* ---- 見出し ---- */
+section h1,
+section h2 {
+  color: var(--ink);
+  font-weight: 700;
+  line-height: 1.35;
+  margin: 0 0 0.6em;
+}
+
+section h1 { font-size: 40px; }
+section h2 { font-size: 34px; }
+
+/* スライド見出しの左側にアクセントバー */
+section h1::before,
+section h2::before {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 0.95em;
+  margin-right: 16px;
+  vertical-align: -0.08em;
+  background: var(--accent);
+  border-radius: 4px;
+}
+
+section h3 {
+  color: var(--accent);
+  font-size: 26px;
+  font-weight: 700;
+  margin: 0.4em 0 0.3em;
+}
+
+/* ---- 箇条書き ---- */
+section ul,
+section ol {
+  margin: 0.3em 0;
+  padding-left: 1.3em;
+}
+
+section li {
+  margin: 0.3em 0;
+}
+
+section ul > li::marker {
+  color: var(--accent);
+}
+
+/* ---- 強調 ---- */
+section strong {
+  color: var(--accent);
+  font-weight: 700;
+}
+
+section a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid var(--accent-weak);
+}
+
+/* ---- コード ---- */
+section code {
+  background: #F3F4F6;
+  color: #B4316B;
+  border-radius: 4px;
+  padding: 0.1em 0.35em;
+  font-size: 0.88em;
+}
+
+section pre {
+  background: #F7F8FA;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 18px 22px;
+  font-size: 20px;
+  line-height: 1.5;
+  overflow: auto;
+}
+
+section pre code {
+  background: transparent;
+  color: var(--ink);
+  padding: 0;
+}
+
+/* ---- 引用 ---- */
+section blockquote {
+  border-left: 6px solid var(--accent);
+  background: var(--accent-weak);
+  margin: 0.5em 0;
+  padding: 0.5em 1em;
+  color: var(--ink);
+  border-radius: 0 8px 8px 0;
+}
+
+/* ---- 表 ---- */
+section table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 22px;
+}
+
+section th {
+  background: var(--accent);
+  color: #FFFFFF;
+  font-weight: 700;
+  padding: 8px 14px;
+  text-align: left;
+}
+
+section td {
+  border-bottom: 1px solid var(--line);
+  padding: 8px 14px;
+}
+
+section tr:nth-child(even) td {
+  background: #F7F8FA;
+}
+
+/* ---- 画像（インライン画像は中央寄せ） ---- */
+section img {
+  display: block;
+  margin-inline: auto;
+  border-radius: 8px;
+}
+
+/* ---- ページ番号 ---- */
+section::after {
+  color: var(--ink-soft);
+  font-size: 16px;
+}
+
+/* ============================================================
+   タイトルスライド   <!-- _class: title -->
+   ============================================================ */
+section.title {
+  background: var(--bg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 72px 80px;
+}
+
+section.title h1 {
+  font-size: 52px;
+  line-height: 1.3;
+  margin-bottom: 0.3em;
+}
+
+section.title h1::before { display: none; }
+
+section.title h2 {
+  font-size: 28px;
+  font-weight: 500;
+  color: var(--ink-soft);
+}
+
+section.title h2::before { display: none; }
+
+/* タイトル下のアクセントライン */
+section.title h1::after {
+  content: "";
+  display: block;
+  width: 96px;
+  height: 8px;
+  margin-top: 0.4em;
+  background: var(--accent);
+  border-radius: 4px;
+}
+
+/* ============================================================
+   章扉スライド   <!-- _class: section -->
+   アクセント色ベタ塗り
+   ============================================================ */
+section.section {
+  background: var(--accent);
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 72px 80px;
+}
+
+section.section h1,
+section.section h2 {
+  color: #FFFFFF;
+}
+
+section.section h1::before,
+section.section h2::before { display: none; }
+
+section.section h2 {
+  font-size: 24px;
+  font-weight: 500;
+  opacity: 0.85;
+}
+
+section.section h1 {
+  font-size: 48px;
+}
+
+section.section::after {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* ============================================================
+   目次スライド   <!-- _class: toc -->
+   ============================================================ */
+section.toc ol {
+  counter-reset: toc;
+  list-style: none;
+  padding-left: 0;
+}
+
+section.toc ol > li {
+  counter-increment: toc;
+  margin: 0.5em 0;
+  padding-left: 2.4em;
+  position: relative;
+}
+
+section.toc ol > li::before {
+  content: counter(toc, decimal-leading-zero);
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+  font-weight: 700;
+}

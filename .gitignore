@@ -1,0 +1,12 @@
+# Marp のレンダリング成果物（slides.md から再生成できる）
+**/slides.*.png
+**/slides.pdf
+**/slides.html
+**/slides.pptx
+
+# OS / エディタ
+.DS_Store
+Thumbs.db
+
+# Node
+node_modules/
