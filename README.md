@@ -27,7 +27,7 @@ NotebookLMのスライド生成と違い、成果物は **編集可能な Marp �
 
 ```
 /plugin marketplace add anndddooh/SlideCreateSkill
-/plugin install slide-builder@slide-builder-marketplace
+/plugin install slide-builder@anndddooh-slide-builder-marketplace
 ```
 
 > ローカルから試す場合は、リポジトリのパスを直接指定できます:
