@@ -252,3 +252,31 @@ section.toc ol > li::before {
   color: var(--accent);
   font-weight: 700;
 }
+
+/* ============================================================
+   密度の高いスライド   <!-- _class: dense -->
+   表が多い等で通常サイズだと収まらないスライド向け。
+   フォント・余白・行間を詰めて表示領域を稼ぐ。
+   ============================================================ */
+section.dense {
+  font-size: 22px;
+  padding: 48px 56px;
+}
+
+section.dense h1 {
+  font-size: 32px;
+  margin-bottom: 0.4em;
+}
+
+section.dense li {
+  margin: 0.15em 0;
+}
+
+section.dense table {
+  font-size: 18px;
+}
+
+section.dense th,
+section.dense td {
+  padding: 5px 10px;
+}
