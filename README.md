@@ -26,7 +26,7 @@ NotebookLMのスライド生成と違い、成果物は **編集可能な Marp �
 ## インストール
 
 ```
-/plugin marketplace add anndddooh/SlideCreateSkill
+/plugin marketplace add anndddooh/slide-builder
 /plugin install slide-builder@anndddooh-slide-builder-marketplace
 ```
 
