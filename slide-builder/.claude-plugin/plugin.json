@@ -1,6 +1,6 @@
 {
   "name": "slide-builder",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Markdown原案から、全文を保持したまま分かりやすいMarp形式のスライド（.md）を生成するスキル。構造図はMermaid、概念図は画像生成AI用プロンプトを用意する。",
   "author": {
     "name": "hironori"
